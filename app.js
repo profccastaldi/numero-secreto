@@ -1,5 +1,5 @@
 let listaDeNumerosSorteados = [];
-let numeroLimite = 10;
+let numeroLimite = 100;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -10,7 +10,6 @@ function exibirTextoNaTela(tag, texto) {
 }
 
 function exibirMensagemInicial() {
-    exibirTextoNaTela('h1', 'Jogo do número secreto meu nome é Cristian sou professor da escola Doutor Álvaro de Souza Lima.');
     exibirTextoNaTela('p', 'Um dos maiores desafios para jogos de sucesso focados em uma campanha com começo, meio e fim é lançar um conteúdo adicional que faça sentido e consiga oferecer um conteúdo à altura da qualidade do game principal, e muitas desenvolvedoras caem na armadilha de prolongar artificialmente a vida de um projeto que já havia encerrado sua trajetória de forma extremamente satisfatória. Felizmente, a Sabotage Studio é uma daquelas desenvolvedoras que sabem como criar DLCs de altíssima qualidade e que até poderiam ser vendidos como conteúdos pagos, mas acabam chegando de forma gratuita para todos aqueles que até já possuem o jogo base.');
 }
 
@@ -37,7 +36,7 @@ function verificarChute() {
 }
 
 function gerarNumeroAleatorio() {
-    let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
+    let numeroEscolhido = parseInt(Math.random() * numeroLimite + 11);
     let quantidadeDeElementosNaLista = listaDeNumerosSorteados.length;
 
     if (quantidadeDeElementosNaLista == numeroLimite) {
