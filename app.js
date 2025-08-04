@@ -10,7 +10,7 @@ function exibirTextoNaTela(tag, texto) {
 }
 
 function exibirMensagemInicial() {
-    exibirTextoNaTela('p', 'Um dos maiores desafios para jogos de sucesso focados em uma campanha com começo, meio e fim é lançar um conteúdo adicional que faça sentido e consiga oferecer um conteúdo à altura da qualidade do game principal, e muitas desenvolvedoras caem na armadilha de prolongar artificialmente a vida de um projeto que já havia encerrado sua trajetória de forma extremamente satisfatória. Felizmente, a Sabotage Studio é uma daquelas desenvolvedoras que sabem como criar DLCs de altíssima qualidade e que até poderiam ser vendidos como conteúdos pagos, mas acabam chegando de forma gratuita para todos aqueles que até já possuem o jogo base.');
+    exibirTextoNaTela('p', 'Teste seu conhecimento e descubra o número secreto!');
 }
 
 exibirMensagemInicial();
@@ -19,7 +19,7 @@ function verificarChute() {
     let chute = document.querySelector('input').value;
     
     if (chute == numeroSecreto) {
-        exibirTextoNaTela('h1', 'Acertou!');
+        exibirTextoNaTela('h1', 'Acertou! Você é bom mesmo!');
         let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
         let mensagemTentativas = `Você descobriu o número secreto com ${tentativas} ${palavraTentativa}!`;
         exibirTextoNaTela('p', mensagemTentativas);
